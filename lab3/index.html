@@ -1,10 +1,183 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿
+<!DOCTYPE html>
+<html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehnologii Web - Laboratorul 3</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-$END$
+<header class="site-header">
+    <h1>Tehnologii Web - Laboratorul 3</h1>
+
+    <nav aria-label="Navigare principală">
+        <a href="#selectori">Selectori CSS</a>
+        <a href="#model-cutie">Modelul cutiei</a>
+        <a href="#flexbox">Flexbox</a>
+        <a href="#grid">CSS Grid</a>
+        <a href="#responsive">Design responsiv</a>
+    </nav>
+</header>
+
+<main>
+    <section id="selectori" class="section">
+        <h2>Pasul 1: Selectori CSS și declarații</h2>
+
+        <p class="important">
+            Acesta este un paragraf important.
+        </p>
+
+        <p>
+            Acest paragraf utilizează stilurile implicite ale paginii.
+        </p>
+    </section>
+
+    <section id="model-cutie" class="section">
+        <h2>Pasul 2: Modelul cutiei CSS (Box Model)</h2>
+
+        <p>
+            Cele două carduri au aceeași lățime declarată,
+            aceeași umplere interioară și aceeași bordură.
+            Diferența este dată de proprietatea box-sizing.
+        </p>
+
+        <div class="box-examples">
+            <article class="card-a">
+                <h3>Content-box</h3>
+                <p>
+                    Lățimea declarată nu include umplerea interioară
+                    și bordura.
+                </p>
+            </article>
+
+            <article class="card-b">
+                <h3>Border-box</h3>
+                <p>
+                    Lățimea declarată include umplerea interioară
+                    și bordura.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section id="flexbox" class="section">
+        <h2>Pasul 3: Bară de navigare folosind Flexbox</h2>
+
+        <p>
+            Bara de navigare utilizează Flexbox pentru a poziționa
+            numele site-ului în stânga și linkurile în dreapta.
+        </p>
+
+        <nav class="demo-nav" aria-label="Navigare demonstrativă">
+            <a class="brand" href="#flexbox">Site-ul meu</a>
+
+            <div class="nav-links">
+                <a href="#selectori">Acasă</a>
+                <a href="#grid">Galerie</a>
+                <a href="#responsive">Despre</a>
+            </div>
+        </nav>
+    </section>
+
+    <section id="grid" class="section">
+        <h2>Pasul 4: Galerie cu șase carduri folosind CSS Grid</h2>
+
+        <p>
+            Galeria utilizează CSS Grid pentru a afișa cardurile
+            în coloane. Numărul coloanelor se adaptează automat
+            în funcție de lățimea ecranului.
+        </p>
+
+        <div class="gallery">
+            <article class="gallery-card">
+                <h3>Cardul 1</h3>
+                <p>Structura documentelor HTML.</p>
+            </article>
+
+            <article class="gallery-card">
+                <h3>Cardul 2</h3>
+                <p>Selectori și declarații CSS.</p>
+            </article>
+
+            <article class="gallery-card">
+                <h3>Cardul 3</h3>
+                <p>Modelul cutiei CSS.</p>
+            </article>
+
+            <article class="gallery-card">
+                <h3>Cardul 4</h3>
+                <p>Aranjarea elementelor cu Flexbox.</p>
+            </article>
+
+            <article class="gallery-card">
+                <h3>Cardul 5</h3>
+                <p>Crearea grilelor cu CSS Grid.</p>
+            </article>
+
+            <article class="gallery-card">
+                <h3>Cardul 6</h3>
+                <p>Realizarea paginilor responsive.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="responsive" class="section">
+        <h2>Pasul 5: Aspect responsiv cu bară laterală și conținut principal</h2>
+
+        <p>
+            Pe ecranele înguste, bara laterală și conținutul principal
+            sunt afișate unul sub celălalt. Pe ecranele mai late,
+            acestea sunt afișate în două coloane.
+        </p>
+
+        <div class="layout">
+            <aside class="sidebar">
+                <h3>Bară laterală</h3>
+
+                <p>
+                    Aici pot fi afișate informații suplimentare
+                    și linkuri utile.
+                </p>
+
+                <a href="#selectori">Recapitulare selectori CSS</a>
+            </aside>
+
+            <div class="main-content">
+                <h3>Conținut principal</h3>
+
+                <p>
+                    Această secțiune conține informațiile principale
+                    ale paginii.
+                </p>
+
+                <p>
+                    Redimensionează fereastra browserului pentru
+                    a observa adaptarea aspectului paginii.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="exercitiu-final" class="section">
+        <h2>Pasul 7: Exercițiu recapitulativ (opțional)</h2>
+
+        <p>
+            Această pagină combină elemente HTML semantice,
+            o foaie de stil externă, modelul cutiei, Flexbox,
+            CSS Grid și designul responsiv.
+        </p>
+
+        <p>
+            <a href="bootstrap-gallery.html">
+                Deschide galeria realizată cu Bootstrap 5
+            </a>
+        </p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>Tehnologii Web - Laboratorul 3</p>
+</footer>
 </body>
 </html>

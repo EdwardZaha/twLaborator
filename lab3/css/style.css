@@ -1,0 +1,192 @@
+﻿
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #243047;
+    background-color: #f4f7fb;
+}
+
+.site-header {
+    padding: 1.5rem;
+    color: white;
+    background-color: #17365d;
+}
+
+.site-header h1 {
+    margin-top: 0;
+}
+
+nav a,
+main a {
+    color: #1769aa;
+}
+
+.site-header nav a {
+    color: white;
+}
+
+a:focus-visible {
+    outline: 3px solid #e7a33e;
+    outline-offset: 4px;
+}
+
+.section {
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    width: min(100% - 2rem, 1100px);
+    background: white;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #17365d;
+}
+
+/* Step 1: CSS selectors and competing declarations */
+.important {
+    color: red;
+    font-size: 1.25rem;
+    padding: 1rem;
+    background-color: #fff0f0;
+}
+
+.important {
+    color: blue;
+}
+
+/* Step 2: CSS Box Model */
+.box-examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-a,
+.card-b {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #17365d;
+    background-color: #e8f1fc;
+}
+
+.card-a {
+    box-sizing: content-box;
+}
+
+.card-b {
+    box-sizing: border-box;
+}
+
+/* Step 3: Flexbox navigation */
+.demo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #e8f1fc;
+    border-radius: 8px;
+}
+
+.demo-nav .brand {
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+/* Step 4: CSS Grid gallery */
+.gallery {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1rem;
+}
+
+.gallery-card {
+    padding: 1.25rem;
+    border: 1px solid #cfdae8;
+    border-radius: 8px;
+    background-color: #edf4fc;
+}
+
+.gallery-card h3 {
+    margin-top: 0;
+}
+
+/* Step 5: Responsive sidebar + main content */
+.layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+.sidebar,
+.main-content {
+    min-width: 0;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.sidebar {
+    background-color: #edf4fc;
+}
+
+.main-content {
+    background-color: #f8f9fb;
+}
+
+/* Footer */
+.site-footer {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    background-color: #17365d;
+}
+
+/* Wider screens */
+@media (min-width: 768px) {
+    .layout {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    }
+}
+
+/* Narrow screens */
+@media (max-width: 480px) {
+    .site-header {
+        padding: 1rem;
+    }
+
+    .demo-nav {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        gap: 0.75rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+}
