@@ -20,6 +20,16 @@
     overflow-y: auto;
     border: 1px solid #e2e8f0;
 }
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
 .message {
     margin-bottom: 12px;
     padding: 10px 14px;
