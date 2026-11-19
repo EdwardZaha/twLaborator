@@ -1,0 +1,21 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}

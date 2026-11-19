@@ -1,0 +1,14 @@
+﻿#cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: hsl(221, 83%, 53%); /* Vibrant professional blue */
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+    z-index: 9999;
+    pointer-events: none; /* Prevents the custom cursor from blocking clicks */
+    transform: translate(-50%, -50%); /* Centers the cursor over the actual pointer coordinate */
+    transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease;
+}
