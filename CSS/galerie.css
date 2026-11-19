@@ -1,0 +1,23 @@
+﻿.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-view {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    overflow: hidden; /* Ascunde partea care depaseste containerul */
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+
+.carousel-view img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
